@@ -16,8 +16,8 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 
-let MONGODB_URL = 'mongodb+srv://vaishnavivk46:vbC37MwTRT7U81Bo@cluster0.lutjhqo.mongodb.net/?retryWrites=true&w=majority'
-mongoose.connect(MONGODB_URL)
+// let MONGODB_URL = 'mongodb+srv://vaishnavivk46:vbC37MwTRT7U81Bo@cluster0.lutjhqo.mongodb.net/?retryWrites=true&w=majority'
+mongoose.connect('mongodb+srv://vaishnavivk46:vbC37MwTRT7U81Bo@cluster0.lutjhqo.mongodb.net/?retryWrites=true&w=majority')
 .then(()=>{
     console.log('DB connected');
 }).catch((err)=>{
