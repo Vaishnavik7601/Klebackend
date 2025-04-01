@@ -33,4 +33,4 @@ let userSchema= new mongoose.Schema({
 })
 
 let User= mongoose.model('User',userSchema);
-module.exports= User;
+module.exports= {User};
