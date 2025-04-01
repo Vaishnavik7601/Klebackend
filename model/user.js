@@ -1,4 +1,4 @@
-const { default: mongoose, trusted } = require("mongoose");
+const mongoose = require("mongoose");
 
 let userSchema= new mongoose.Schema({
     name:{
